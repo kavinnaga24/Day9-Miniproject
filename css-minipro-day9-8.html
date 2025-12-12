@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Feature Grid</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            grid-auto-rows: 1fr; 
+        }
+
+        .feature-box {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        .feature-box .icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .feature-box h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .feature-box p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="text-align:center; margin-bottom:30px;">Product Feature Grid</h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-box">
+                <div class="icon">⚡</div>
+                <h3>Fast Performance</h3>
+                <p>Experience lightning-fast load times and quick operations.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="icon">🔒</div>
+                <h3>Secure System</h3>
+                <p>Your data is protected with advanced security features.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="icon">☁️</div>
+                <h3>Cloud Sync</h3>
+                <p>All your data stays synced across multiple devices.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="icon">🎨</div>
+                <h3>Customizable</h3>
+                <p>Personalize the interface to match your preferences.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="icon">📊</div>
+                <h3>Analytics</h3>
+                <p>Track performance with detailed, easy-to-read analytics.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="icon">🔔</div>
+                <h3>Smart Notifications</h3>
+                <p>Stay updated with real-time alerts and reminders.</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

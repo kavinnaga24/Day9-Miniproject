@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+}
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 240px auto; 
+    grid-template-rows: 60px auto;     
+    height: 100vh;
+    gap: 0;
+}
+
+.sidebar {
+    grid-row: 1 / span 2; 
+    background: #111;
+    padding: 20px;
+    color: #fff;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover {
+    color: #ff9800;
+}
+
+.header {
+    background: #222;
+    color: #fff;
+    display:flex;
+    align-items:center;
+    padding-left:20px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.main {
+    padding: 20px;
+    background: white;
+}
+
+.main h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.main p {
+    margin-bottom: 20px;
+    color: #555;
+}
+.widgets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.widget-box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li>🏠 Home</li>
+            <li>📊 Analytics</li>
+            <li>⚙️ Settings</li>
+            <li>📤 Logout</li>
+        </ul>
+    </div>
+
+    <div class="header">
+        Welcome to the Dashboard
+    </div>
+
+    
+    <div class="main">
+        <h2>Welcome to the Dashboard</h2>
+        <p>This is a responsive dashboard layout using CSS Grid.</p>
+
+        <div class="widgets">
+            <div class="widget-box">📈 Sales Report</div>
+            <div class="widget-box">👥 User Statistics</div>
+            <div class="widget-box">💰 Revenue</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

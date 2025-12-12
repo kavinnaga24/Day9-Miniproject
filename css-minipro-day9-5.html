@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magazine Layout</title>
+<style>
+    body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #f4f4f4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 350px);
+    grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+    grid-column-gap: 25px;
+    padding: 20px;
+}
+
+.header {
+    grid-area: header;
+    background: #222;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.main {
+    grid-area: main;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.main img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.footer {
+    grid-area: footer;
+    background: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "sidebar"
+            "footer";
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <header class="header">
+        <h1>TechToday Magazine</h1>
+        <p>Your weekly dose of technology news, insights & innovations.</p>
+    </header>
+
+    <main class="main">
+        <h2>Featured Story: AI Is Reshaping the World</h2>
+        <img src="fe3.jpg" alt="AI Image">
+        <p>
+            Artificial Intelligence continues to evolve at an exponential pace.
+            From healthcare to finance, AI is transforming how we work, 
+            live, and interact with machines. Experts say the next decade will bring
+            breakthroughs we never imagined.
+        </p>
+
+        <h3>Inside the Article</h3>
+        <ul>
+            <li>How AI is used in daily life</li>
+            <li>Future predictions of AI</li>
+            <li>Risks and opportunities</li>
+        </ul>
+    </main>
+   
+    <footer class="footer">
+        © 2025 TechToday Magazine 
+    </footer>
+
+</div>
+
+</body>
+</html>

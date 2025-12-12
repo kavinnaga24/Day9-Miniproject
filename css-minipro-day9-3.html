@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Gallery</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px; 
+        padding: 10px;
+    }
+
+    .photo-card {
+        background: #f5f5f5;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .photo-card img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .caption {
+        font-weight: bold;
+        margin-top: 8px;
+    }
+</style>
+
+</head>
+<body>
+
+<h2>Photo Gallery</h2>
+
+<div class="gallery">
+
+    <div class="photo-card">
+        <img src="car.jpg">
+        <div class="caption">Car</div>
+    </div>
+
+    <div class="photo-card">
+        <img src="fest.jpg">
+        <div class="caption">Festival</div>
+    </div>
+
+    <div class="photo-card">
+        <img src="floral.png">
+        <div class="caption">Floral</div>
+    </div>
+
+    <div class="photo-card">
+        <img src="forest.jpg">
+        <div class="caption">Green Forest</div>
+    </div>
+
+    <div class="photo-card">
+        <img src="greece.jpg">
+        <div class="caption">Greece</div>
+    </div>
+
+    <div class="photo-card">
+        <img src="beach.jpg">
+        <div class="caption">Ocean Waves</div>
+    </div>
+
+</div>
+
+</body>
+</html>
